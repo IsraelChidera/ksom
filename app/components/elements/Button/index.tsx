@@ -20,9 +20,9 @@ const index = ({ classType, children, className, onClick, type, disable, ...prop
             whileTap={{ scale: 0.95 }}
             type={type}
             onClick={onClick}
-            className={`${classType === "primary" && "border bg-white text-primary border-white"} 
+            className={`${classType === "primary" && "border bg-[#9F5E23] rounded-[30px] text-primary border-white"} 
             ${classType === "secondary" && "bg-primary text-white"} 
-            rounded-[8px] text-[13px] lg:text-[17px] font-medium hover:bg-opacity-90 py-[14px] px-[32px]
+            rounded-[8px] text-[13px] lg:text-[17px] font-medium hover:bg-opacity-90 py-[12px] px-[24px]
             
             ${className}`
             }

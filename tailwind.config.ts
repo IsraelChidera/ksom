@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#F0EADB",
+        text: "#221E22",
       },
     },
   },
