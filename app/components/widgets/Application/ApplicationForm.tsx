@@ -320,7 +320,7 @@ const ApplicationForm = () => {
                 <p className='mt-[40px] text-text font-bold text-[22px]'>Additional Documents</p>
                 <div>
                     <section className="container">
-                        <div {...getRootProps({ className: 'dropzone' })}>
+                        <div {...getRootProps({ className: 'dropzone border rounded-lg py-8 px-4' })}>
                             <input {...getInputProps()} />
                             <p>Drag 'n' drop some files here, or click to select files</p>
                         </div>
