@@ -39,7 +39,9 @@ const Navbar = () => {
                                 </Link>
                             </li>
 
-                            <Button classType='primary'>Apply Now</Button>
+                            <Link href="/application">
+                            <   Button classType='primary'>Apply Now</Button>
+                            </Link>
                         </ul>
                     </div>
                 </div>

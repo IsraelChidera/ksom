@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "#F0EADB",
         text: "#221E22",
+        gold: "#A57D3F",
       },
     },
   },
