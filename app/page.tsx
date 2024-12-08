@@ -1,3 +1,4 @@
+import Footer from "./components/widgets/Footer";
 import Eligibility from "./components/widgets/LandingPage/Eligibility";
 import FAQ from "./components/widgets/LandingPage/FAQ";
 import Gains from "./components/widgets/LandingPage/Gains";
@@ -14,6 +15,7 @@ export default function Home() {
       <Eligibility />
       <FAQ />
       <NextStep />
+      <Footer />
     </main>
   );
 }
