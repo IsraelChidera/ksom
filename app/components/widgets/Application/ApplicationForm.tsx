@@ -1,7 +1,18 @@
+"use client"
+
 import React from 'react';
 import Button from '@/app/components/elements/Button';
+import { useDropzone } from 'react-dropzone';
 
 const ApplicationForm = () => {
+
+    const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
+
+    const files = acceptedFiles.map(file => (
+        <li key={file.path}>
+            {file.path} - {file.size} bytes
+        </li>
+    ));
 
     const agreement = [
         {
@@ -289,7 +300,7 @@ const ApplicationForm = () => {
 
                     <select className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'>
                         <option>Abuja</option>
-                        <option>Warri</option>
+                        <option>Zaria</option>
                     </select>
                 </div>
 
@@ -308,14 +319,16 @@ const ApplicationForm = () => {
                 {/* Additional Documents */}
                 <p className='mt-[40px] text-text font-bold text-[22px]'>Additional Documents</p>
                 <div>
-                    <label className='block font-medium text-[20px]'>
-                        Choice of Campus <span className='text-red-600'>{"(Required)"}</span>
-                    </label>
-
-                    <select className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'>
-                        <option>Abuja</option>
-                        <option>Warri</option>
-                    </select>
+                    <section className="container">
+                        <div {...getRootProps({ className: 'dropzone' })}>
+                            <input {...getInputProps()} />
+                            <p>Drag 'n' drop some files here, or click to select files</p>
+                        </div>
+                        <aside>
+                            {/* <h4>Files</h4> */}
+                            <ul>{files}</ul>
+                        </aside>
+                    </section>
                 </div>
 
                 {/* Personal Statement */}
