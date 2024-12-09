@@ -27,12 +27,21 @@ const Sidebar = () => {
                 </li>
 
                 <li>
-                    <Link className='rounded-[8px] bg-white px-[20px] py-[8px] flex items-center space-x-4' href="">
+                    <Link className='rounded-[8px] bg-white px-[20px] py-[8px] flex items-center space-x-4' href="/dashboard/benchmark">
                         <Image src="/user.png" alt="user icon" width={24} height={24} />
                         <p className='text-gold font-medium text-sm '>
-                            Settings
+                            Benchmark
                         </p>
                     </Link>
+                </li>
+
+                <li>
+                    <button className='rounded-[8px] bg-white px-[20px] py-[8px] flex items-center space-x-4' >
+                        <Image src="/user.png" alt="user icon" width={24} height={24} />
+                        <p className='text-[#FF0000] font-medium text-sm '>
+                            Log out
+                        </p>
+                    </button>
                 </li>
             </ul>
         </aside>

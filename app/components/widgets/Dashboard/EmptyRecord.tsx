@@ -3,7 +3,7 @@ import React from 'react'
 
 const EmptyRecord = () => {
     return (
-        <section className='pt-[80px] pb-[302px]'>
+        <section className='pt-[80px] pb-[302px] '>
             <div className='space-y-[8px]'>
                 <div className='flex justify-center'>
                     <Image src="/user3.png" alt="users icon" width={48} height={48} />

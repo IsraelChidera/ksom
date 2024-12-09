@@ -134,7 +134,7 @@ const page = () => {
                     </tbody>
                 </table>
 
-                {/* <div className='flex items-center justify-center'>
+                {/* <div className='bg-white flex items-center justify-center'>
                     <EmptyRecord />
                 </div> */}
             </div>
