@@ -80,22 +80,6 @@ const page = () => {
 
                     <div>
                         <p className='text-[20px] font-medium mb-4'>
-                            Highest Academic Qualification <span className="text-red-400">{"(5 points)"}</span>
-                        </p>
-
-                        <input type="text" placeholder='Postgraduate' className='block rounded-[10px] w-full text-[17px] bg-[#EEEEEE] py-4 px-5 ' disabled />
-
-                        <select className="text-base w-full mt-4 px-5 py-4 border border-[#d9d9d9] rounded-[10px]" required>                            
-                            <option>5</option>
-                            <option>4</option>
-                            <option>3</option>
-                            <option>2</option>
-                            <option>1</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <p className='text-[20px] font-medium mb-4'>
                             Are you filled with the Holy Spirit? <span className="text-red-400">{"(10 points)"}</span>
                         </p>
 
@@ -105,6 +89,22 @@ const page = () => {
                             <option>10</option>
                             <option>9</option>
                             <option>8</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p className='text-[20px] font-medium mb-4'>
+                            Highest Academic Qualification <span className="text-red-400">{"(5 points)"}</span>
+                        </p>
+
+                        <input type="text" placeholder='Postgraduate' className='block rounded-[10px] w-full text-[17px] bg-[#EEEEEE] py-4 px-5 ' disabled />
+
+                        <select className="text-base w-full mt-4 px-5 py-4 border border-[#d9d9d9] rounded-[10px]" required>
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
                         </select>
                     </div>
                 </div>
