@@ -1,12 +1,17 @@
+"use client"
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { FaArrowLeft } from "react-icons/fa6";
 import Button from '@/app/components/elements/Button';
 
 const page = () => {
+    const router = useRouter();
+
     return (
         <main className='py-[32px] px-[40px] bg-[#f9f9f9]'>
             <div className='flex items-center mb-[24px] space-x-6'>
-                <FaArrowLeft className='text-[32px]' />
+                <FaArrowLeft onClick={() => router.back()} className='text-[30px] cursor-pointer' />
                 <h1 className='text-[28px] text-text font-bold'>Applicant details</h1>
             </div>
 

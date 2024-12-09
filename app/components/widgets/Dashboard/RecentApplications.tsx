@@ -69,7 +69,7 @@ const RecentApplications = () => {
                                 </td>
 
                                 <td className="p-4 text-left text-sm font-normal ">
-                                    <Link className="text-[#757577] hover:underline" href="#">
+                                    <Link className="text-[#757577] hover:underline" href="/dashboard/applicants/id">
                                         View
                                     </Link>
                                 </td>
@@ -95,7 +95,7 @@ const RecentApplications = () => {
                                 </td>
 
                                 <td className="p-4 text-left text-sm font-normal ">
-                                    <Link className="text-[#757577] hover:underline" href="#">
+                                    <Link className="text-[#757577] hover:underline" href="/dashboard/applicants/id">
                                         View
                                     </Link>
                                 </td>
@@ -121,7 +121,7 @@ const RecentApplications = () => {
                                 </td>
 
                                 <td className="p-4 text-left text-sm font-normal ">
-                                    <Link className="text-[#757577] hover:underline" href="#">
+                                    <Link className="text-[#757577] hover:underline" href="/dashboard/applicants/id">
                                         View
                                     </Link>
                                 </td>
