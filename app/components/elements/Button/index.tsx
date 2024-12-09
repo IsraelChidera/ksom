@@ -21,7 +21,7 @@ const index = ({ classType, children, className, onClick, type, disable, ...prop
             type={type}
             onClick={onClick}
             className={`${classType === "primary" && "border bg-[#9F5E23] rounded-[30px] text-primary border-white"} 
-            ${classType === "secondary" && "bg-primary text-white"} 
+            ${classType === "secondary" && "bg-transparent text-gold border-gold border rounded-[30px]"} 
              text-[13px] lg:text-[17px] font-medium hover:bg-opacity-90 py-[12px] px-[24px]
             
             ${className}`
