@@ -24,7 +24,7 @@ export default async function DashboardLayout({
             <div className='relative md:pl-[278px] w-full'>
 
                 <div className="relative">
-                    <div className="sticky z-40 top-0 right-0 w-full">
+                    <div className="w-full">
                         <DashboardNav />
                     </div>
                     {children}

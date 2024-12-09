@@ -9,7 +9,7 @@ const Sidebar = () => {
 
             <ul className='mt-[80px] space-y-[24px]'>
                 <li>
-                    <Link className='rounded-[8px] bg-[#A57D3F1A] px-[20px] py-[8px] flex items-center space-x-4' href="">
+                    <Link className='rounded-[8px] bg-[#A57D3F1A] px-[20px] py-[8px] flex items-center space-x-4' href="/dashboard">
                         <Image src="/dashboard.png" alt="dashboard icon" width={24} height={24} />
                         <p className='text-gold font-medium text-sm '>
                             Dashboard
@@ -18,7 +18,7 @@ const Sidebar = () => {
                 </li>
 
                 <li>
-                    <Link className='rounded-[8px] bg-white px-[20px] py-[8px] flex items-center space-x-4' href="">
+                    <Link className='rounded-[8px] bg-white px-[20px] py-[8px] flex items-center space-x-4' href="/dashboard/applicants">
                         <Image src="/user.png" alt="user icon" width={24} height={24} />
                         <p className='text-gold font-medium text-sm '>
                             Applicants

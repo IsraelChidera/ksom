@@ -3,8 +3,8 @@ import React from 'react'
 
 const DashboardNav = () => {
     return (
-        <nav className='flex items-center justify-between py-[32px] px-[40px] border-b border-b-[#D9D9D9]'>
-            <form>
+        <nav className='flex items-center justify-between py-[32px] px-[40px] border-b border-b-[#D9D9D9] h-[112px]'>
+            {/* <form>
                 <input 
                     type="text" 
                     className='relative w-[472px] px-[16px] py-[12px] rounded-[24px] opacity-70 border border-[#757577]' 
@@ -18,7 +18,7 @@ const DashboardNav = () => {
                 <div className='w-fit bg-gold rounded-full p-2'>
                     <Image src="/user.png" alt="user icon" width={24} height={24} />
                 </div>
-            </div>
+            </div> */}
         </nav>
     )
 }
