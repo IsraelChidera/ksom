@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <header className="h-[screen] relative">
+        <header className=" relative">
             <Swiper
                 className="relative z-10"
                 loop={true}
@@ -74,10 +74,27 @@ const Hero = () => {
                 </SwiperSlide>
             </Swiper>
 
-            <div className="absolute w-full top-4 left-4 z-20">
+            <div className="absolute w-full top-0 left-0 z-20">
                 <Container>
                     <Navbar />
                 </Container>
+            </div>
+
+            <div className='h-full w-full absolute top-0 left-0 z-20'>
+                <div className="mt-14 h-full flex items-center justify-center">
+                    <div className='w-[640px]'>
+                        <h1 className="text-[56px] text-primary font-medium leading-[75px] text-center">
+                            Empowering Bright Minds for a Better Tomorrow
+                        </h1>
+                        <p className="mt-4 leading-[30px] text-[22px] text-center text-primary">
+                            Join a community dedicated to excellence, innovation, and lifelong learning. Your success starts here.
+                        </p>
+
+                        <div className="flex justify-center">
+                            <Button className="mt-8" classType='primary'>Apply Now</Button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* <Container>
