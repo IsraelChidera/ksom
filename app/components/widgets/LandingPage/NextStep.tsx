@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@/app/components/elements/Container';
 import Button from '@/app/components/elements/Button';
+import Link from 'next/link';
 
 const NextStep = () => {
     return (
@@ -17,9 +18,11 @@ const NextStep = () => {
                     </p>
 
                     <div className='mt-[34px] flex items-center justify-center'>
-                        <Button classType="primary">
-                            Apply Now
-                        </Button>
+                        <Link href="/application">
+                            <Button classType="primary">
+                                Apply Now
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </Container>

@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import 'swiper/css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -74,7 +75,7 @@ const Hero = () => {
                 </SwiperSlide>
             </Swiper>
 
-            <div className="absolute w-full top-0 left-0 z-20">
+            <div className="absolute w-full top-0 left-0 z-30">
                 <Container>
                     <Navbar />
                 </Container>
@@ -83,15 +84,17 @@ const Hero = () => {
             <div className='h-full w-full absolute top-0 left-0 z-20'>
                 <div className="mt-14 h-full flex items-center justify-center">
                     <div className='w-[640px]'>
-                        <h1 className="text-[56px] text-primary font-medium leading-[75px] text-center">
+                        <h1 className="text-[56px] text-white font-bold leading-[75px] text-center">
                             Empowering Bright Minds for a Better Tomorrow
                         </h1>
-                        <p className="mt-4 leading-[30px] text-[22px] text-center text-primary">
+                        <p className="mt-4 leading-[30px] text-[22px] text-center text-white">
                             Join a community dedicated to excellence, innovation, and lifelong learning. Your success starts here.
                         </p>
 
                         <div className="flex justify-center">
-                            <Button className="mt-8" classType='primary'>Apply Now</Button>
+                            <Link href="/application">
+                                <Button className="mt-8" classType='primary'>Apply Now</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

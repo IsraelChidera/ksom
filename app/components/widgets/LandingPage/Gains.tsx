@@ -41,7 +41,7 @@ const Gains = () => {
         },
     ]
     return (
-        <section className='bg-[#2D2D2D] py-[80px] text-white'>
+        <section id="benefits" className='bg-[#2D2D2D] py-[80px] text-white'>
             <Container>
                 <div>
                     <h2 className='text-center font-medium text-[32px]'>

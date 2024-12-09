@@ -3,7 +3,7 @@ import Container from '@/app/components/elements/Container';
 
 const WhoWeAre = () => {
     return (
-        <section className='bg-primary py-[80px]'>
+        <section id="about" className='bg-primary py-[80px]'>
             <Container className="flex justify-center">
                 <div className='w-[880px]'>
                     <h2 className='font-medium text-[32px] text-text'>

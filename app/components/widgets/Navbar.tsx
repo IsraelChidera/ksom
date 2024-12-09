@@ -16,31 +16,31 @@ const Navbar = () => {
 
                         <ul className='text-[17px] space-x-[32px] flex items-center'>
                             <li>
-                                <Link href="#" className='text-text'>
+                                <Link href="/#about" className='text-text cursor-pointer hover:opacity-80'>
                                     About
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="#" className='text-text'>
+                                <Link href="/#benefits" className='text-text cursor-pointer hover:opacity-80'>
                                     Benefits
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="#" className='text-text'>
+                                <Link href="/#eligibility" className='text-text cursor-pointer hover:opacity-80'>
                                     Eligibility
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="#" className='text-text'>
+                                <Link href="/#faqs" className='text-text cursor-pointer hover:opacity-80'>
                                     FAQs
                                 </Link>
                             </li>
 
                             <Link href="/application">
-                            <   Button classType='primary'>Apply Now</Button>
+                                <Button classType='primary'>Apply Now</Button>
                             </Link>
                         </ul>
                     </div>

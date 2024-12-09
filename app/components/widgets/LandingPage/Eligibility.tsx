@@ -53,7 +53,7 @@ const Eligibility = () => {
     ]
 
     return (
-        <section className="py-[80px] text-text bg-[#F0EADB]">
+        <section id="eligibility" className="py-[80px] text-text bg-[#F0EADB]">
             <Container>
                 <h2 className='text-center font-medium text-[32px]'>
                     Eligibility Criteria

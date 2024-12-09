@@ -1,8 +1,16 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Container from '@/app/components/elements/Container';
 import { MdAddCircleOutline, MdOutlineCancel } from 'react-icons/md';
 
 const FAQ = () => {
+
+    const [active, setActive] = useState<number | null>(0);
+
+    function handleActive(index: number) {
+        active === index ? setActive(null) : setActive(index);
+    }
 
     const faqs = [
         {
@@ -62,7 +70,7 @@ const FAQ = () => {
         }
     ]
     return (
-        <section className='py-[80px] text-text bg-[#ffffff]'>
+        <section id="faqs" className='py-[80px] text-text bg-[#ffffff]'>
             <Container>
                 <h2 className='text-center font-medium text-[40px]'>
                     FAQs
@@ -75,16 +83,36 @@ const FAQ = () => {
                 </div>
 
                 <div className='mt-[80px] '>
-                    <div className='border-b border-b-gold pb-4 mb-[32px]'>
-                        <div className="flex items-center justify-between">
-                            <p>Who</p>
+                    {
+                        faqs.map((faq, _) => (
+                            <div className='border-b border-b-gold pb-4 mb-[32px]'>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-[#1A1A1A] text-[20px] font-semibold">
+                                        {faq.question}
+                                    </p>
 
-                            {/* <MdOutlineCancel /> */}
-                            <MdAddCircleOutline />
-                        </div>
+                                    {/*  */}
+                                    {
+                                        active === _ ?
+                                            <MdOutlineCancel onClick={() => handleActive(_)} className='text-[32px]' />
+                                            :
+                                            <MdAddCircleOutline onClick={() => handleActive(_)} className='text-[32px]' />
+                                    }
+                                </div>
 
-                        <p>A</p>
-                    </div>
+                                {
+                                    active === _ ? (
+                                        <p className='mt-6 text-[17px] font-medium text-[#1a1a1a]'>
+                                            {faq.answer}
+                                        </p>
+                                    ) :
+                                        null
+                                }
+
+                            </div>
+                        ))
+                    }
+
                 </div>
             </Container>
         </section>
