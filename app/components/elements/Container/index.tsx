@@ -7,7 +7,7 @@ type ContainerProps = {
 
 const index = ({ children, className }: ContainerProps) => {
     return (
-        <div className={`mx-auto max-w-[1300px] w-10/12 ${className}`}>
+        <div className={`mx-auto max-w-[1300px] lg:w-10/12 w-11/12 ${className}`}>
             {children}
         </div>
     )

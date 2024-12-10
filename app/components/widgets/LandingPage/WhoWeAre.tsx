@@ -5,12 +5,12 @@ const WhoWeAre = () => {
     return (
         <section id="about" className='bg-primary py-[80px]'>
             <Container className="flex justify-center">
-                <div className='w-[880px]'>
-                    <h2 className='font-medium text-[32px] text-text'>
+                <div className='lg:w-[880px]'>
+                    <h2 className='font-medium text-[28px] lg:text-[32px] text-text'>
                         Who we are
                     </h2>
 
-                    <p className="mt-[32px] text-text text-[20px] space-y-6">
+                    <p className="mt-6 lg:mt-[32px] text-text text-base lg:text-[20px] space-y-6">
                         <span className='block'>
                             The Koinonia School of Ministry (KSOM) is the training and Bible education institution of Eternity Network International (ENI), founded in 2013 by Apostle Joshua Selman under divine instructions. KSOM is not just a school; it is a movement committed to raising Kingdom ambassadors who are equipped to transform society in various spheres of influence.
                         </span>

@@ -55,17 +55,17 @@ const Eligibility = () => {
     return (
         <section id="eligibility" className="py-[80px] text-text bg-[#F0EADB]">
             <Container>
-                <h2 className='text-center font-medium text-[32px]'>
+                <h2 className='text-center font-semibold text-[28px] lg:text-[32px]'>
                     Eligibility Criteria
                 </h2>
 
                 <div className='flex justify-center mt-4'>
-                    <p className="w-[488px] text-center  text-[20px] ">
+                    <p className="lg:w-[488px] text-center text-[18px] lg:text-[20px] ">
                         Ensure you meet the requirements to take the first step toward your academic journey.
                     </p>
                 </div>
 
-                <div className='mt-[80px] grid grid-cols-2 gap-x-[100px] gap-y-[40px]'>
+                <div className='mt-10 lg:mt-[80px] lg:grid lg:grid-cols-2 lg:gap-x-[100px] lg:gap-y-[40px] lg:space-y-0 space-y-6'>
                     {
                         eligibility.map((item) => (
                             <div key={item.id} className='border-t border-[#9F5E23] pt-6'>

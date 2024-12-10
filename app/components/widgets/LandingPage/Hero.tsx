@@ -12,9 +12,9 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <header className=" relative">
+        <header className="h-screen lg:h-full relative">
             <Swiper
-                className="relative z-10"
+                className="relative z-10 h-screen"
                 loop={true}
                 grabCursor={true}
                 autoplay={{
@@ -77,8 +77,14 @@ const Hero = () => {
 
             <div className="absolute w-full top-0 left-0 z-30">
                 <Container>
-                    <Navbar />
+                    <div className="lg:block hidden">
+                        <Navbar />
+                    </div>
+
                 </Container>
+                <div className="lg:hidden block">
+                    <Navbar />
+                </div>
             </div>
 
             <div className='h-full w-full absolute top-0 left-0 z-20'>

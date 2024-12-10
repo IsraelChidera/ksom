@@ -10,7 +10,7 @@ const Footer = () => {
                     <Image src="/logo2.png" alt="KSOM logo" width={84} height={40} />
                 </div>
 
-                <div className='border-t pt-[32px] text-white border-[#D9D9D9] flex items-center justify-between'>
+                <div className='border-t pt-[32px] text-white border-[#D9D9D9] lg:space-y-0 space-y-4 lg:flex items-center justify-between'>
                     <p>
                         Copyright ©2024, All rights reserved by KSOM.
                     </p>

@@ -8,6 +8,7 @@ import { CiMail } from 'react-icons/ci';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { IoCloseSharp } from 'react-icons/io5';
+import Editor from '@/app/components/widgets/Utils/Editor';
 
 const style = {
     position: 'absolute',
@@ -49,7 +50,7 @@ const page = () => {
             >
                 <Box sx={style}>
                     <div className='flex justify-between items-center'>
-                        <p className="text-center mt-[24px] font-semibold text-[22px] text-[#1a1a1a]">
+                        <p className="text-center font-semibold text-[22px] text-[#1a1a1a]">
                             Send Email
                         </p>
 
@@ -70,6 +71,8 @@ const page = () => {
                             className='block text-[17px] rounded-[10px] focus:outline-none border border-[#D9D9D9] px-[20px] py-[15px] w-full mt-[48px]'
                             required
                         />
+
+                        <Editor />
 
                         <div className="flex justify-end">
                             <div className='flex items-center space-x-4'>

@@ -67,8 +67,9 @@ const ApplicationForm = () => {
             ]
         },
     ]
+
     return (
-        <section className='py-[80px] flex justify-center'>
+        <section className='py-10 lg:py-[80px] flex justify-center'>
             <form className='w-[820px] space-y-[48px]'>
                 {/* Personal Info */}
                 <p className='text-text font-bold text-[22px]'>Personal Information</p>
@@ -77,7 +78,7 @@ const ApplicationForm = () => {
                     <label className='block font-medium text-[20px]'>Surname <span className='text-red-600'>{"(Required)"}</span></label>
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -86,15 +87,15 @@ const ApplicationForm = () => {
                     <label className='block font-medium text-[20px]'>First Name <span className='text-red-600'>{"(Required)"}</span></label>
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
 
-                <div className=" grid grid-cols-2 gap-[60px]">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-[60px] space-y-[48px] lg:space-y-0">
                     <div>
                         <label className='block font-medium text-[20px]'>Gender <span className='text-red-600'>{"(Required)"}</span></label>
-                        <select className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'>
+                        <select className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'>
                             <option>Male</option>
                             <option>Female</option>
                         </select>
@@ -102,7 +103,7 @@ const ApplicationForm = () => {
 
                     <div>
                         <label className='block font-medium text-[20px]'>Marital Status <span className='text-red-600'>{"(Required)"}</span></label>
-                        <select className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'>
+                        <select className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'>
                             <option>Single</option>
                             <option>Married</option>
                         </select>
@@ -113,7 +114,7 @@ const ApplicationForm = () => {
                     <label className='block font-medium text-[20px]'>Date of Birth <span className='text-red-600'>{"(Required)"}</span></label>
                     <input
                         type='date'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -125,17 +126,17 @@ const ApplicationForm = () => {
                     <label className='block font-medium text-[20px]'>Residential Address <span className='text-red-600'>{"(Required)"}</span></label>
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
 
-                <div className="grid grid-cols-2 gap-[60px]">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-[60px] space-y-[48px] lg:space-y-0">
                     <div>
                         <label className='block font-medium text-[20px]'>City/Town <span className='text-red-600'>{"(Required)"}</span></label>
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -144,7 +145,7 @@ const ApplicationForm = () => {
                         <label className='block font-medium text-[20px]'>State of Residence <span className='text-red-600'>{"(Required)"}</span></label>
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -153,7 +154,7 @@ const ApplicationForm = () => {
                         <label className='block font-medium text-[20px]'>Nationality <span className='text-red-600'>{"(Required)"}</span></label>
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -162,7 +163,7 @@ const ApplicationForm = () => {
                         <label className='block font-medium text-[20px]'>Email Address <span className='text-red-600'>{"(Required)"}</span></label>
                         <input
                             type='email'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -172,7 +173,7 @@ const ApplicationForm = () => {
                     <label className='block font-medium text-[20px]'>Phone Number <span className='text-red-600'>{"(Required)"}</span></label>
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -204,7 +205,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -234,7 +235,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -248,7 +249,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -260,7 +261,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -274,7 +275,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -286,7 +287,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -298,7 +299,8 @@ const ApplicationForm = () => {
                         Choice of Campus <span className='text-red-600'>{"(Required)"}</span>
                     </label>
 
-                    <select className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'>
+                    <select className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'>
+                        <option>Select Campus</option>
                         <option>Abuja</option>
                         <option>Zaria</option>
                     </select>
@@ -311,7 +313,7 @@ const ApplicationForm = () => {
 
                     <input
                         type='text'
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         required
                     />
                 </div>
@@ -339,7 +341,7 @@ const ApplicationForm = () => {
                     </label>
 
                     <textarea
-                        className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                        className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                         rows={4}
                         cols={4}
                         required
@@ -355,7 +357,7 @@ const ApplicationForm = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-[60px]">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-[60px] space-y-[48px] lg:space-y-0">
                     <div>
                         <label className='block font-medium text-[20px]'>
                             Name <span className='text-red-600'>{"(Required)"}</span>
@@ -363,7 +365,7 @@ const ApplicationForm = () => {
 
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -375,7 +377,7 @@ const ApplicationForm = () => {
 
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -387,7 +389,7 @@ const ApplicationForm = () => {
 
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -399,7 +401,7 @@ const ApplicationForm = () => {
 
                         <input
                             type='text'
-                            className='text-[17px] focus:outline-none border-b border-b-text w-full mt-[48px]'
+                            className='text-base lg:text-[17px] focus:outline-none border-b border-b-text w-full mt-7 lg:mt-[48px]'
                             required
                         />
                     </div>
@@ -464,7 +466,11 @@ const ApplicationForm = () => {
                 </div>
 
                 <p className='text-[20px] font-medium text-[#1a1a1a]'>
-                    Date <input type="text" className='text-[17px] focus:outline-none border-b border-b-text ' />
+                    Date <input
+                        type='date'
+                        className='inline text-base lg:text-[17px] focus:outline-none border-b border-b-text mt-7 lg:mt-[48px]'
+                        required
+                    />                    
                 </p>
 
                 <Button classType="primary">

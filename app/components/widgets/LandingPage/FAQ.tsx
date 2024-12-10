@@ -69,25 +69,26 @@ const FAQ = () => {
             answer: `KSOM runs every year, for a period of 7 months.`
         }
     ]
+    
     return (
         <section id="faqs" className='py-[80px] text-text bg-[#ffffff]'>
             <Container>
-                <h2 className='text-center font-medium text-[40px]'>
+                <h2 className='text-center font-semibold text-[32px] lg:text-[40px]'>
                     FAQs
                 </h2>
 
-                <div className='flex justify-center mt-4'>
-                    <p className="w-[488px] text-center  text-[20px] ">
+                <div className='flex justify-center mt-2 lg:mt-4'>
+                    <p className="lg:w-[488px] text-center text-[18px] lg:text-[20px] ">
                         We're happy to answer your questions.
                     </p>
                 </div>
 
-                <div className='mt-[80px] '>
+                <div className='mt-6 lg:mt-[80px] '>
                     {
                         faqs.map((faq, _) => (
                             <div className='border-b border-b-gold pb-4 mb-[32px]'>
                                 <div className="flex items-center justify-between">
-                                    <p className="text-[#1A1A1A] text-[20px] font-semibold">
+                                    <p className="text-[#1A1A1A] text-lg lg:text-[20px] font-semibold">
                                         {faq.question}
                                     </p>
 
@@ -102,7 +103,7 @@ const FAQ = () => {
 
                                 {
                                     active === _ ? (
-                                        <p className='mt-6 text-[17px] font-medium text-[#1a1a1a]'>
+                                        <p className='mt-6 text-base lg:text-[17px] font-medium text-[#1a1a1a]'>
                                             {faq.answer}
                                         </p>
                                     ) :
