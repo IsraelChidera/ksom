@@ -15,20 +15,8 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 1050,
-    bgcolor: 'background.paper',
-    border: '1px solid #fff',
-    borderRadius: '16px',
-    boxShadow: 24,
-    p: 4,
-};
-
-const style2 = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 350,
+    // width: 1050,
+    width: { xs: '90%', sm: '80%', md: '60%', lg: '50%' },
     bgcolor: 'background.paper',
     border: '1px solid #fff',
     borderRadius: '16px',
@@ -54,7 +42,7 @@ const page = () => {
             </div>
 
             {/* Modal */}
-            <div className='lg:block hidden'>
+            <div className='block'>
                 <Modal
                     open={open}
                     onClose={handleClose}
@@ -102,57 +90,7 @@ const page = () => {
                         </form>
                     </Box>
                 </Modal>
-            </div>
-
-            <div className='lg:hidden bloc'>
-                <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
-                    className='pt-[48px] pb-[32px] px-[24px]'
-                >
-                    <Box sx={style2}>
-                        <div className='flex justify-between items-center'>
-                            <p className="text-center font-semibold text-[22px] text-[#1a1a1a]">
-                                Send Email
-                            </p>
-
-                            <IoCloseSharp onClick={handleClose} className="text-text cursor-pointer text-[32px]" />
-                        </div>
-
-                        <form className='mt-[48px] space-y-[32px]'>
-                            <select className='text-[17px] rounded-[10px] focus:outline-none border border-[#D9D9D9] px-[20px] py-[15px] w-full mt-[48px]'>
-                                <option>Select Applicant</option>
-                                <option>All Applicants</option>
-                                <option>Accepted Applicants</option>
-                                <option>Rejected Applicants</option>
-                            </select>
-
-                            <input
-                                type='text'
-                                placeholder='Subject'
-                                className='block text-[17px] rounded-[10px] focus:outline-none border border-[#D9D9D9] px-[20px] py-[15px] w-full mt-[48px]'
-                                required
-                            />
-
-                            <Editor />
-
-                            <div className="flex justify-end">
-                                <div className='flex items-center space-x-4'>
-                                    <Button onClick={handleClose} classType="secondary">
-                                        Cancel
-                                    </Button>
-
-                                    <Button classType="primary">
-                                        Send
-                                    </Button>
-                                </div>
-                            </div>
-                        </form>
-                    </Box>
-                </Modal>
-            </div>
+            </div>           
 
             <form className='bg-white rounded-[16px] p-5 lg:p-[30px] w-full lg:w-fit'>
                 <label className='block text-text text-sm lg:text-[20px] font-semibold'>
