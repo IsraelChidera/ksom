@@ -5,15 +5,15 @@ import Link from 'next/link'
 const RecentApplications = () => {
 
     return (
-        <section className='bg-white mt-6 p-[30px] rounded-[16px]'>
-            <div className='flex justify-between'>
-                <h2 className='text-[20px] text-text font-bold mb-[24px]'>Overview</h2>
+        <section className='bg-white mt-6 p-[20px] lg:p-[30px] rounded-[16px]'>
+            <div className='lg:flex justify-between'>
+                <h2 className='text-[17px] lg:text-[20px] text-text font-semibold lg:font-bold mb-[24px]'>Recent applications</h2>
 
                 <form>
                     <input
                         type="text"
-                        className='relative lg:w-[300px] px-[16px] py-[10px] rounded-[24px] opacity-70 border border-[#757577]'
-                        placeholder='Search...'
+                        className='relative text-[13px] lg:text-base placeholder:text-[#757577] lg:w-[300px] w-full px-[16px] py-[10px] rounded-[24px] opacity-70 border border-[#757577]'
+                        placeholder='Search by name and email'
                     />
                 </form>
             </div>
@@ -126,8 +126,7 @@ const RecentApplications = () => {
                                     </Link>
                                 </td>
                             </tr>
-                        </tbody>
-                        {/* <tfoot></tfoot> */}
+                        </tbody>                        
                     </table>
                 </div>
             </div>

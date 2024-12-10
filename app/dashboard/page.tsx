@@ -4,9 +4,9 @@ import RecentApplications from '../components/widgets/Dashboard/RecentApplicatio
 
 const page = () => {
     return (
-        <main className='py-[32px] px-[40px] bg-[#f9f9f9]'>
+        <main className='py-[32px] px-5 lg:px-[40px] bg-[#f9f9f9]'>
             <h1 className='text-[28px] text-text font-bold mb-[24px]'>Overview</h1>
-            <div className='grid grid-cols-4 gap-[20px]'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-[10px] lg:gap-[20px]'>
                 <div className='bg-white rounded-[16px] px-[16px] py-[24px]'>
                     <Image src="/user2.png" alt="users icon" width={48} height={48} />
 

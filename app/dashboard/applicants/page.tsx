@@ -4,24 +4,24 @@ import React from 'react'
 
 const page = () => {
     return (
-        <main className='py-[32px] px-[40px] bg-[#f9f9f9]'>
-            <h1 className='text-[28px] text-text font-bold mb-[24px]'>Applicants</h1>
+        <main className='py-[32px] px-5 lg:px-[40px] bg-[#f9f9f9]'>
+            <h1 className='text-[17px] lg:text-[28px] text-text font-bold mb-[24px]'>Applicants</h1>
 
-            <div className='mt-[40px] flex items-center justify-between'>
+            <div className='mt-[32px] lg:mt-[40px] lg:flex items-center justify-between'>
                 <div className='relative flex items-center space-x-4'>
-                    <button className='rounded-[8px] py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-base font-medium'>Clear filters</button>
+                    <button className='rounded-[8px] py-[10px] lg:py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-sm lg:text-base font-medium'>Clear filters</button>
 
-                    <button className='rounded-[8px] py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-base font-medium'>Grade</button>
+                    <button className='rounded-[8px] py-[10px] lg:py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-sm lg:text-base font-medium'>Grade</button>
 
-                    <button className='rounded-[8px] py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-base font-medium'>
+                    <button className='rounded-[8px] py-[10px] lg:py-3 px-4 bg-[#eeeeee] text-[#191c1f] text-sm lg:text-base font-medium'>
                         Status
                     </button>
                 </div>
 
-                <form>
+                <form className='lg:mt-0 mt-6'>
                     <input
                         type="text"
-                        className='relative lg:w-[300px] px-[16px] py-[10px] rounded-[24px] opacity-70 border border-[#757577]'
+                        className='relative lg:w-[300px] w-full px-[16px] py-[10px] rounded-[24px] opacity-70 border border-[#757577]'
                         placeholder='Search...'
                     />
                 </form>
